@@ -40,9 +40,9 @@
 
     var buildUrl = 'Build';
     var config = {
-      dataUrl: buildUrl + '/Web.data.unityweb',
-      frameworkUrl: buildUrl + '/Web.framework.js.unityweb',
-      codeUrl: buildUrl + '/Web.wasm.unityweb',
+      dataUrl: buildUrl + '/penguin-wars-web.data.unityweb',
+      frameworkUrl: buildUrl + '/penguin-wars-web.framework.js.unityweb',
+      codeUrl: buildUrl + '/penguin-wars-web.wasm.unityweb',
       streamingAssetsUrl: 'StreamingAssets',
       companyName: "kazuhachi08",
       productName: "ペンギン大戦争",
@@ -52,7 +52,7 @@
     };
 
     var script = document.createElement('script');
-    script.src = buildUrl + '/Web.loader.js';
+    script.src = buildUrl + '/penguin-wars-web.loader.js';
     script.onload = function () {
       createUnityInstance(canvas, config, function (p) {
         document.getElementById('progress').textContent = Math.round(p * 100);
